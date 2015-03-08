@@ -278,8 +278,7 @@
 
 - (void)setPlaceholder:(NSString *)placeholder
 {
-    [super setPlaceholder:placeholder];
-    
+    [super setPlaceholder: self.isRequired ? [placeholder stringByAppendingString:self.requiredText] : placeholder];
     
     if ([placeholder length]) {
         _floatLabel.text = placeholder;

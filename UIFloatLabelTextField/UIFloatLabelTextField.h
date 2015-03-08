@@ -22,6 +22,9 @@ typedef NS_ENUM(NSUInteger, UIFloatLabelAnimationType)
 
 @interface UIFloatLabelTextField : UITextField
 
+@property (nonatomic, assign) BOOL isRequired;
+@property (nonatomic, strong) NSString *requiredText;
+
 /**
  A UILabel that @a floats above the contents of the UITextField
  */
